@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Devoir de Contrôle - Tech Horizon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Forum de l'Innovation Numérique 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Conférences</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulaire-inscription">
+            <fieldset>
+                <legend>Inscription des Participants</legend>
+                <form id="monFormulaire">
+                    <p>
+                        <label for="nom">Nom complet :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </p>
+                    <p>
+                        <label for="email">Adresse Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="age">Âge :</label>
+                        <input type="number" id="age" name="age" required>
+                    </p>
+                    <p>
+                        <label for="profil">Votre profil :</label>
+                        <select id="profil">
+                            <option value="etudiant">Étudiant</option>
+                            <option value="professionnel">Professionnel</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </p>
+                    <p>Type de badge : 
+                        <input type="radio" name="badge" id="pass-standard" checked> <label for="pass-standard">Standard</label>
+                        <input type="radio" name="badge" id="pass-vip"> <label for="pass-vip">VIP</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="newsletter"> 
+                        <label for="newsletter">S'abonner aux actualités</label>
+                    </p>
+                    <p>
+                        <label for="message">Pourquoi souhaitez-vous participer ?</label><br>
+                        <textarea id="message" rows="4" style="width: 100%;"></textarea>
+                    </p>
+                    <button type="submit">Valider mon inscription</button>
+                    <div id="zoneErreur" style="color: red; margin-top: 10px;"></div>
+                </form>
+            </fieldset>
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="https://via.placeholder.com/200x150" alt="Innovation Tech" id="image-projet">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact : contact@tech-horizon.tn | Tél : +216 71 123 456</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
